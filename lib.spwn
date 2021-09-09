@@ -1,0 +1,7 @@
+#[cache_output]
+extract obj_props
+
+import 'stamp.spwn'
+
+return {
+}
