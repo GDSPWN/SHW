@@ -15,6 +15,8 @@ shamrock = ?c
 shamrock.set(40, 200, 150)
 magenta = ?c
 magenta.set(220, 0, 190)
+orange = ?c
+orange.set(240, 125, 0)
 
 return {
     spwn: @stamp::new([
@@ -86,6 +88,67 @@ return {
             Y: 30,
             ROTATION: 180,
             COLOR: magenta,
+        },
+    ]),
+    pckp: @stamp::new([
+        // ARROW
+        obj{
+            OBJ_ID: block,
+            X: 15,
+            Y: 25,
+            SCALING: 0.8,
+            Z_ORDER: 1,
+            COLOR: white,
+        },
+        obj{
+            OBJ_ID: slope,
+            X: 15,
+            Y: 15,
+            ROTATION: 45,
+            Z_ORDER: 1,
+            COLOR: white,
+        },
+        // BASE
+        obj{
+            OBJ_ID: block,
+            X: 0,
+            Y: 0,
+            COLOR: shamrock,
+        },
+        obj{
+            OBJ_ID: block,
+            X: 30,
+            Y: 0,
+            COLOR: shamrock,
+        },
+        // CIRCLE
+        obj{
+            OBJ_ID: semiCircle,
+            X: 0,
+            Y: 51,
+            ROTATION: 0,
+            COLOR: orange,
+        },
+        obj{
+            OBJ_ID: semiCircle,
+            X: 30,
+            Y: 51,
+            ROTATION: 90,
+            COLOR: orange,
+        },
+        obj{
+            OBJ_ID: semiCircle,
+            X: 30,
+            Y: 21,
+            ROTATION: 180,
+            COLOR: orange,
+        },
+        obj{
+            OBJ_ID: semiCircle,
+            X: 0,
+            Y: 21,
+            ROTATION: 270,
+            COLOR: orange,
         },
     ]),
 }
