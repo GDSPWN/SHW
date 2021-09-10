@@ -151,4 +151,50 @@ return {
             COLOR: orange,
         },
     ]),
+    blck: @stamp::new([
+        // SHAMROCK BLOCK
+        obj{
+            OBJ_ID: block,
+            X: 0,
+            Y: 30,
+            COLOR: shamrock,
+        },
+        obj{
+            OBJ_ID: block,
+            X: 30,
+            Y: 30,
+            COLOR: shamrock,
+        },
+        // MAGENTA BLOCK
+        obj{
+            OBJ_ID: block,
+            X: 0,
+            Y: 0,
+            COLOR: magenta,
+        },
+        obj{
+            OBJ_ID: block,
+            X: 13,
+            Y: 0,
+            COLOR: magenta,
+        },
+        // ARROW
+        obj{
+            OBJ_ID: block,
+            X: 7,
+            Y: 23,
+            SCALING: 0.6,
+            Z_ORDER: 1,
+            COLOR: white,
+        },
+        obj{
+            OBJ_ID: slope,
+            X: 7,
+            Y: 15,
+            ROTATION: 45,
+            SCALING: 0.8,
+            Z_ORDER: 1,
+            COLOR: white,
+        },
+    ]),
 }
