@@ -1,0 +1,15 @@
+SHW = import '.'
+
+logos = SHW.keys()
+offsetX = 1
+offsetY = 1
+distX = 5
+distY = 5
+
+for index in ..logos.length {
+    $.print(logos[index])
+    let logo = SHW[logos[index]]
+    logo.x = 30 * (distX * index + offsetX)
+    logo.y = 30 * (offsetY) 
+    logo.print()
+}
