@@ -13,4 +13,5 @@ return (colors){
     ['shamrock',40,200,150],
     ['magenta',220,0,190],
     ['orange',240,125,0],
+    ['softred',240,110,110],
 ])

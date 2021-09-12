@@ -3,4 +3,5 @@ return {
     spwn: import 'logos/spwn.spwn',
     pckp: import 'logos/pckp.spwn',
     blck: import 'logos/blck.spwn',
+    anmt: import 'logos/anmt.spwn',
 }

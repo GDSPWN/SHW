@@ -1,0 +1,30 @@
+extract obj_props
+extract import '../blocks.spwn'
+extract import '../colors.spwn'
+
+return @stamp::new([
+    // BASE
+    obj{
+        OBJ_ID: block,
+        X: 15,
+        Y: 15,
+        SCALING: 2,
+        COLOR: softred,
+    },
+    // ARROW
+    obj{
+        OBJ_ID: slope,
+        X: 12,
+        Y: 15,
+        ROTATION: 315,
+        COLOR: white,
+    },
+    obj{
+        OBJ_ID: slope,
+        X: 13,
+        Y: 15,
+        SCALING: 0.5,
+        ROTATION: 135,
+        COLOR: white,
+    },
+])
