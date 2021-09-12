@@ -3,9 +3,12 @@ extract obj_props
 
 type @stamp
 impl @stamp {
-    new: (objects:[@object]=[]){
+    new: (objects:[@object]|@object=[]){
         return @stamp::{
-            objects: objects,
+            objects: switch objects {
+                [@object]: objects
+                @object: [objects]
+            },
             x: 0,
             y: 0,
             scaling: 1,
