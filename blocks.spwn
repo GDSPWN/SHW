@@ -1,0 +1,5 @@
+return {
+    block: 211,
+    slope: 693,
+    semiCircle: 1837,
+}
