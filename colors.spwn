@@ -10,6 +10,7 @@ return (colors){
     return colorsObj
 }([
     ['white',255,255,255],
+    ['black',0,0,0],
     ['shamrock',40,200,150],
     ['magenta',220,0,190],
     ['orange',240,125,0],

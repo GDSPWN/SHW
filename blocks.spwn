@@ -1,5 +1,6 @@
 return {
     block: 211,
     slope: 693,
+    text: 914,
     semiCircle: 1837,
 }

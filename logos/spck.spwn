@@ -1,0 +1,24 @@
+extract obj_props
+extract import '../blocks.spwn'
+extract import '../colors.spwn'
+
+return @stamp::new([
+    // BASE
+    obj{
+        OBJ_ID: block,
+        X: 15,
+        Y: 15,
+        SCALING: 2,
+        COLOR: black,
+    },
+    // TEXT
+    obj{
+        OBJ_ID: text,
+        X: 16,
+        Y: 18,
+        SCALING: 0.7,
+        Z_LAYER: 1,
+        TEXT: $.b64encode("spck"),
+        COLOR: white,
+    }
+])
