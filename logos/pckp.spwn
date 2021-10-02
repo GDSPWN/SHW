@@ -9,7 +9,7 @@ return @stamp::new([
         X: 15,
         Y: 25,
         SCALING: 0.8,
-        Z_ORDER: 1,
+        Z_ORDER: 2,
         COLOR: white,
     },
     obj{
@@ -17,7 +17,7 @@ return @stamp::new([
         X: 15,
         Y: 15,
         ROTATION: 45,
-        Z_ORDER: 1,
+        Z_ORDER: 2,
         COLOR: white,
     },
     // BASE
@@ -25,12 +25,14 @@ return @stamp::new([
         OBJ_ID: block,
         X: 0,
         Y: 0,
+        Z_ORDER: 1,
         COLOR: shamrock,
     },
     obj{
         OBJ_ID: block,
         X: 30,
         Y: 0,
+        Z_ORDER: 1,
         COLOR: shamrock,
     },
     // CIRCLE
