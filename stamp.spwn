@@ -28,7 +28,7 @@ impl @stamp {
             clone.set(Y, ((object[Y] * self.scaling) + self.y if object has Y else self.y) + offset)
             clone.set(SCALING, object[SCALING] * self.scaling if object has SCALING else self.scaling)
             clone.set(Z_ORDER, object[Z_ORDER] + self.z_order if object has Z_ORDER else self.z_order)
-            clone.set(Z_LAYER, -1 if self.z_layer == 0 else self.z_layer)
+            clone.set(Z_LAYER, object[Z_LAYER] + self.z_layer if object has Z_LAYER else self.z_layer)
             $.add(clone)
         }
     },
