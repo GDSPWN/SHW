@@ -1,0 +1,47 @@
+extract obj_props
+extract import '../blocks.spwn'
+extract import '../colors.spwn'
+
+return @stamp::new([
+    // BASE
+    obj{
+        OBJ_ID: block,
+        X: 15,
+        Y: 15,
+        SCALING: 2,
+        COLOR: black,
+    },
+    // WAVE
+    obj{
+        OBJ_ID: arc,
+        X: 10,
+        Y: 15,
+        SCALING: 0.6,
+        ROTATION: 0,
+        COLOR: shamrock,
+    },
+    obj{
+        OBJ_ID: arc,
+        X: 14,
+        Y: 15,
+        SCALING: 0.6,
+        ROTATION: 45,
+        COLOR: shamrock,
+    },
+    obj{
+        OBJ_ID: arc,
+        X: 14,
+        Y: 15,
+        SCALING: 0.6,
+        ROTATION: 225,
+        COLOR: magenta,
+    },
+    obj{
+        OBJ_ID: arc,
+        X: 20,
+        Y: 15,
+        SCALING: 0.6,
+        ROTATION: 180,
+        COLOR: magenta,
+    },
+])

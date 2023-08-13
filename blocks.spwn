@@ -2,5 +2,6 @@ return {
     block: 211,
     slope: 693,
     text: 914,
+    arc: 1835,
     semiCircle: 1837,
 }

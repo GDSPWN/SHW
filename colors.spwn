@@ -4,7 +4,7 @@ return (colors){
     let colorsObj = {}
     for color in colors {
         group = ?c
-        group.set(color[1],color[2],color[3])    
+        group.set(rgb8(color[1],color[2],color[3]))    
         let colorsObj[color[0]] = group
     }
     return colorsObj

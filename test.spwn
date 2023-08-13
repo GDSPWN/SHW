@@ -6,7 +6,7 @@ offsetY = 1
 distX = 5
 distY = 5
 
-for index in ..logos.length {
+for index in 0..logos.length {
     $.print(logos[index])
     let logo = SHW[logos[index]]
     logo.x = 30 * (distX * index + offsetX)

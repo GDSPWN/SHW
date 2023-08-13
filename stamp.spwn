@@ -5,7 +5,7 @@ type @stamp
 impl @stamp {
     new: (objects:[@object]|@object=[]){
         return @stamp::{
-            objects: switch objects {
+            objects: match objects {
                 [@object]: objects
                 @object: [objects]
             },
@@ -23,12 +23,12 @@ impl @stamp {
         for object in self.objects {
             offset = 15 * self.scaling
             let clone = object
-            clone.set(OBJ_ID, object[OBJ_ID] if object has OBJ_ID else 1)
-            clone.set(X, ((object[X] * self.scaling) + self.x if object has X else self.x) + offset)
-            clone.set(Y, ((object[Y] * self.scaling) + self.y if object has Y else self.y) + offset)
-            clone.set(SCALING, object[SCALING] * self.scaling if object has SCALING else self.scaling)
-            clone.set(Z_ORDER, object[Z_ORDER] + self.z_order if object has Z_ORDER else self.z_order)
-            clone.set(Z_LAYER, object[Z_LAYER] + self.z_layer if object has Z_LAYER else self.z_layer)
+            clone.set(OBJ_ID, object[OBJ_ID] if OBJ_ID in object else 1)
+            clone.set(X, ((object[X] * self.scaling) + self.x if X in object else self.x) + offset)
+            clone.set(Y, ((object[Y] * self.scaling) + self.y if Y in object else self.y) + offset)
+            clone.set(SCALING, object[SCALING] * self.scaling if SCALING in object else self.scaling)
+            clone.set(Z_ORDER, object[Z_ORDER] + self.z_order if Z_ORDER in object else self.z_order)
+            clone.set(Z_LAYER, object[Z_LAYER] + self.z_layer if Z_LAYER in object else self.z_layer)
             $.add(clone)
         }
     },
